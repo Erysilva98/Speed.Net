@@ -17,7 +17,7 @@ $itemTeste: #6a0777;
 *{
     padding: 0;
     margin: 0;
-    background-color: $planoFundo;
+    scrollbar-width: none;
 }
 
 @media only screen
@@ -25,8 +25,7 @@ $itemTeste: #6a0777;
     header{
         background-color: $menuCorFundo;
         height: 40px;
-        width: 99vw;
-        position: fixed;
+        width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -65,28 +64,40 @@ $itemTeste: #6a0777;
     }
 
     main{
-        height: 90vh;
+        background-color: $planoFundo;
+        height: 87vh;
         display: flex;
+
+        h1{
+            color: $tituloCor;
+            height: 50px;
+            display: flex;
+            margin-top: 120px;
+            margin-left: 100px;
+            font-size: 130px;
+        }
         
         img{
-            background-color: $textoCor;
             display: flex;
+            position: static;
             height: 500px;
-            width: 700px;
+            width:750px;
             float: right;
-            margin-top: 70px;
+            margin-top: 25px;
             // Margim em relação ao conteúdo a esquerda
-            margin-left: 700px;
+            margin-left: -260px;
+            
         }
     }
 
     // Seção Benefícios
 
     #beneficios{
-        background-color: $itemTeste;
+        background-color: $planoFundo;
         height: 90vh;
 
         h2{
+            padding-top: 10px;
             text-align: center;
             color: $textoCor;
         }
@@ -98,7 +109,6 @@ $itemTeste: #6a0777;
                 width: 30px;
                 display: flex;
                 flex-direction: row;
-                border-radius: 70%;
             }        
         }
     }
@@ -108,9 +118,9 @@ $itemTeste: #6a0777;
     #planos{
         background-color: $caixaTeste;
         height: 90vh;
-        margin-top: 50px;
 
         h2{
+            padding-top: 10px;
             text-align: center;
             color: $textoCor;
         }
@@ -123,6 +133,7 @@ $itemTeste: #6a0777;
         height: 90vh;
 
         h2{
+            padding-top: 10px;
             text-align: center;
             color: $textoCor;
         }
@@ -135,6 +146,7 @@ $itemTeste: #6a0777;
         height: 90vh;
 
         h2{
+            padding-top: 10px;
             text-align: center;
             color: $textoCor;
         }
@@ -144,9 +156,10 @@ $itemTeste: #6a0777;
 
     #empresa{
         background-color: $itemTeste;
-        height: 30vh;
+        height: 40vh;
 
         h2{
+            padding-top: 10px;
             text-align: center;
             color: $textoCor;
         }

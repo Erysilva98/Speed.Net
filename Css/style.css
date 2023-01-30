@@ -2,15 +2,14 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: #252525;
+  scrollbar-width: none;
 }
 
 @media only screen {
   header {
     background-color: #000000;
     height: 40px;
-    width: 99vw;
-    position: fixed;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,23 +43,33 @@
     margin: 20px;
   }
   main {
-    height: 90vh;
+    background-color: #252525;
+    height: 87vh;
     display: flex;
+  }
+  main h1 {
+    color: #970303;
+    height: 50px;
+    display: flex;
+    margin-top: 120px;
+    margin-left: 100px;
+    font-size: 130px;
   }
   main img {
-    background-color: #ffffff;
     display: flex;
+    position: static;
     height: 500px;
-    width: 700px;
+    width: 750px;
     float: right;
-    margin-top: 70px;
-    margin-left: 700px;
+    margin-top: 25px;
+    margin-left: -260px;
   }
   #beneficios {
-    background-color: #6a0777;
+    background-color: #252525;
     height: 90vh;
   }
   #beneficios h2 {
+    padding-top: 10px;
     text-align: center;
     color: #ffffff;
   }
@@ -70,14 +79,13 @@
     width: 30px;
     display: flex;
     flex-direction: row;
-    border-radius: 70%;
   }
   #planos {
     background-color: #41a1be;
     height: 90vh;
-    margin-top: 50px;
   }
   #planos h2 {
+    padding-top: 10px;
     text-align: center;
     color: #ffffff;
   }
@@ -86,6 +94,7 @@
     height: 90vh;
   }
   #planos h2 {
+    padding-top: 10px;
     text-align: center;
     color: #ffffff;
   }
@@ -94,14 +103,16 @@
     height: 90vh;
   }
   #clientes h2 {
+    padding-top: 10px;
     text-align: center;
     color: #ffffff;
   }
   #empresa {
     background-color: #6a0777;
-    height: 30vh;
+    height: 40vh;
   }
   #empresa h2 {
+    padding-top: 10px;
     text-align: center;
     color: #ffffff;
   }
