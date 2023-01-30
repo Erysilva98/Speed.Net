@@ -1,0 +1,157 @@
+// Fonts Google
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+// Definir as Fontes
+
+// Cores
+$menuCorFundo: #000000;
+$planoFundo: #252525;
+$tituloCor: #970303;
+$textoCor: #ffffff;
+
+// Cores para Desenvolvimento
+$caixaTeste: #41a1be;
+$itemTeste: #6a0777;
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: $planoFundo;
+}
+
+@media only screen
+{
+    header{
+        background-color: $menuCorFundo;
+        height: 40px;
+        width: 99vw;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-right: 15px;
+
+        img{
+            height: 60px;
+            width: 60px;
+            margin-top: 20px;
+            margin-left: 35px;
+        }
+        nav{
+            background-color: $menuCorFundo;
+            height: 30px;
+            display: flex;
+            align-items: flex-end;
+
+            ul{
+                display: flex;
+
+                li{
+                    background-color: $menuCorFundo;
+                    list-style: none;
+
+                    a{
+                        background-color: $menuCorFundo;
+                        color: $tituloCor;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        height: 90vh;
+        display: flex;
+        
+        img{
+            background-color: $textoCor;
+            display: flex;
+            height: 500px;
+            width: 700px;
+            float: right;
+            margin-top: 70px;
+            // Margim em relação ao conteúdo a esquerda
+            margin-left: 700px;
+        }
+    }
+
+    // Seção Benefícios
+
+    #beneficios{
+        background-color: $itemTeste;
+        height: 90vh;
+
+        h2{
+            text-align: center;
+            color: $textoCor;
+        }
+
+        .icons{
+            img{
+                background-color: $textoCor;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                flex-direction: row;
+                border-radius: 70%;
+            }        
+        }
+    }
+
+    // Seção Planos
+
+    #planos{
+        background-color: $caixaTeste;
+        height: 90vh;
+        margin-top: 50px;
+
+        h2{
+            text-align: center;
+            color: $textoCor;
+        }
+    }
+
+    // Seção Clientes
+
+    #planos{
+        background-color: $itemTeste;
+        height: 90vh;
+
+        h2{
+            text-align: center;
+            color: $textoCor;
+        }
+    }
+
+    // Seção Planos
+
+    #clientes{
+        background-color: $caixaTeste;
+        height: 90vh;
+
+        h2{
+            text-align: center;
+            color: $textoCor;
+        }
+    }
+
+    // Rodapé 
+
+    #empresa{
+        background-color: $itemTeste;
+        height: 30vh;
+
+        h2{
+            text-align: center;
+            color: $textoCor;
+        }
+    }
+
+}
+
+
