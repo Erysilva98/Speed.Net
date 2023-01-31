@@ -17,6 +17,7 @@ $itemTeste: #6a0777;
 *{
     padding: 0;
     margin: 0;
+    font-size: 14px;
     scrollbar-width: none;
 }
 
@@ -24,7 +25,7 @@ $itemTeste: #6a0777;
 {
     header{
         background-color: $menuCorFundo;
-        height: 40px;
+        height: 60px;
         width: 100vw;
         display: flex;
         flex-direction: row;
@@ -40,9 +41,11 @@ $itemTeste: #6a0777;
         }
         nav{
             background-color: $menuCorFundo;
-            height: 30px;
+            height: 60px;
             display: flex;
-            align-items: flex-end;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5%;
 
             ul{
                 display: flex;
@@ -65,28 +68,27 @@ $itemTeste: #6a0777;
 
     main{
         background-color: $planoFundo;
-        height: 87vh;
+        height: 90vh;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         h1{
             color: $tituloCor;
-            height: 50px;
-            display: flex;
-            margin-top: 120px;
-            margin-left: 100px;
-            font-size: 130px;
+            font-size: 16rem;
+            text-align: left;
+            margin-top: -200px;
+            z-index: 1;
+            
         }
         
         img{
-            display: flex;
-            position: static;
-            height: 500px;
-            width:750px;
-            float: right;
-            margin-top: 25px;
-            // Margim em relação ao conteúdo a esquerda
-            margin-left: -260px;
-            
+            height: 80vh;
+            width: 50vw;
+
+            position: absolute;
+            margin-left: 30%;
+            z-index: 0;
         }
     }
 
@@ -100,16 +102,6 @@ $itemTeste: #6a0777;
             padding-top: 10px;
             text-align: center;
             color: $textoCor;
-        }
-
-        .icons{
-            img{
-                background-color: $textoCor;
-                height: 30px;
-                width: 30px;
-                display: flex;
-                flex-direction: row;
-            }        
         }
     }
 
