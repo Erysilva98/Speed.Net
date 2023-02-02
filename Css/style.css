@@ -114,50 +114,138 @@
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     text-align: center;
   }
-  #beneficios img {
+  #beneficios .icons {
+    height: 90%;
+    display: flex;
+  }
+  #beneficios .icons .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 5px;
+  }
+  #beneficios .icons .info img {
     background-color: #ffffff;
-    width: 70px;
-    border-radius: 90%;
+    width: 60px;
+    border-radius: 80%;
+    margin: 20px 0;
+  }
+  #beneficios .icons .info h3, #beneficios .icons .info h4, #beneficios .icons .info h5, #beneficios .icons .info h6 {
+    color: #db0505;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 2px 10px;
+    margin-bottom: 5px;
+  }
+  #beneficios .icons .info p {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    height: 60%;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-justify: auto;
+    padding: 0 30px;
   }
   #planos {
-    background-color: #41a1be;
-    height: 90vh;
+    background-color: #1f1f1f;
+    height: 95vh;
   }
   #planos h2 {
-    padding-top: 10px;
+    color: #db0505;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: #ffffff;
   }
-  #planos {
+  #planos .info {
+    display: flex;
+    flex-direction: row;
+  }
+  #planos .info ul {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+  }
+  #planos .info ul li {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+  #planos .container {
+    display: flex;
+  }
+  #planos .container .detalhes {
+    width: 100%;
+  }
+  #planos .container .detalhes ul {
     background-color: #6a0777;
-    height: 90vh;
+    align-content: center;
   }
-  #planos h2 {
-    padding-top: 10px;
-    text-align: center;
+  #planos .container .detalhes ul li {
+    background-color: #41a1be;
+  }
+  #planos .container .detalhes ul li img {
+    background-color: #ffffff;
+    width: 30px;
+    border-radius: 80%;
+  }
+  #planos .container .detalhes ul li p {
     color: #ffffff;
+    position: relative;
   }
   #clientes {
-    background-color: #41a1be;
-    height: 90vh;
+    background-color: #6a0777;
+    height: 95vh;
   }
   #clientes h2 {
-    padding-top: 10px;
+    color: #db0505;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: #ffffff;
+  }
+  #clientes .clientes {
+    display: flex;
+  }
+  #clientes .clientes img {
+    background-color: #ffffff;
+    width: 200px;
+    margin: 20px 0;
   }
   #empresa {
-    background-color: #6a0777;
-    height: 40vh;
+    background-color: #41a1be;
+    height: 50vh;
   }
   #empresa h2 {
-    padding-top: 10px;
+    color: #db0505;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: #ffffff;
   }
 }
 /* Estilos para dispositivos móveis */

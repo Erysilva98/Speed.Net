@@ -142,7 +142,6 @@ $itemTeste: #6a0777;
     }
 
     // Seção Benefícios
-
     #beneficios{
         background-color: $planoFundo;
         height: 95vh;
@@ -152,68 +151,170 @@ $itemTeste: #6a0777;
             font-family: $font-titulo;
             font-weight: $font-weight-bolder;
             font-size: 2.5rem;
+            margin-top: 5px;
             display: flex;
             justify-content: center;
             text-align: center;
         }
 
-        img{
-            background-color: $textoCor;
-            width: 70px;
-            border-radius: 90%;
+        .icons{
+            height: 90%;
+            display: flex;
+
+            .info{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 15px 5px;
+
+                img{
+                    background-color: $textoCor;
+                    width: 60px;
+                    border-radius: 80%;
+                    margin: 20px 0;
+                }
+
+                h3, h4, h5, h6{
+                    color: $tituloCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-medium;
+                    font-size: 1.5rem;
+                    padding: 2px 10px;
+                    margin-bottom: 5px;   
+                }
+
+                p{
+                    color: $textoCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-light;
+                    height: 60%;
+                    font-size: 1.7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-justify: auto;
+                    padding: 0 30px;
+                }
+
+            }
         }
     }
 
     // Seção Planos
 
     #planos{
-        background-color: $caixaTeste;
-        height: 90vh;
+        background-color: $planoFundo;
+        height: 95vh;
 
         h2{
-            padding-top: 10px;
+            color: $tituloCor;
+            font-family: $font-titulo;
+            font-weight: $font-weight-bolder;
+            font-size: 2.5rem;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
             text-align: center;
-            color: $textoCor;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: row;
+            
+            ul{
+                width: 100%;
+                display: flex;
+                margin-top: 20px;
+                li{
+                    color: $textoCor;
+                    font-family: $font-titulo;
+                    font-weight: $font-weight-bolder;
+                    font-size: 2rem;
+                    width: 100%;
+                    margin: 0 20px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .container{
+            display: flex;
+
+            .detalhes
+            {
+                width: 100%;
+                
+                ul{
+                    background-color: $itemTeste;
+                    align-content: center;
+                    
+                    li{
+                        background-color: #41a1be;
+                        
+                        img{
+                            background-color: $textoCor;
+                            width: 30px;
+                            border-radius: 80%;
+                        }
+
+                        p{
+                            color: $textoCor;
+                            position: relative;
+                        }
+                    }
+                }
+                
+            }
         }
     }
 
     // Seção Clientes
-
-    #planos{
-        background-color: $itemTeste;
-        height: 90vh;
-
-        h2{
-            padding-top: 10px;
-            text-align: center;
-            color: $textoCor;
-        }
-    }
-
-    // Seção Planos
-
     #clientes{
-        background-color: $caixaTeste;
-        height: 90vh;
+        background-color: $itemTeste;
+        height: 95vh;
 
         h2{
-            padding-top: 10px;
+            color: $tituloCor;
+            font-family: $font-titulo;
+            font-weight: $font-weight-bolder;
+            font-size: 2.5rem;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
             text-align: center;
-            color: $textoCor;
+        }
+
+
+        .clientes{
+            display: flex;
+            img{
+                background-color: $textoCor;
+                width: 200px;
+                margin: 20px 0;
+            }
         }
     }
 
     // Rodapé 
 
     #empresa{
-        background-color: $itemTeste;
-        height: 40vh;
+        background-color: $caixaTeste;
+        height: 50vh;
 
         h2{
-            padding-top: 10px;
+            color: $tituloCor;
+            font-family: $font-titulo;
+            font-weight: $font-weight-bolder;
+            font-size: 2.5rem;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
             text-align: center;
-            color: $textoCor;
         }
+
+
     }
 
 }
