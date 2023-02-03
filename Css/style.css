@@ -21,7 +21,7 @@
     justify-content: flex-start;
     width: 70px;
     height: 70px;
-    margin: 20px 40px;
+    margin: 15px 50px;
     border-radius: 20px;
   }
   header nav {
@@ -45,7 +45,7 @@
     color: #db0505;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -102,7 +102,7 @@
   main .container .imgHome img {
     height: 90%;
     width: 55%;
-    margin: 0 5px;
+    margin: 0 35px;
     filter: brightness(85%);
   }
   #beneficios {
@@ -124,23 +124,25 @@
     display: flex;
   }
   #beneficios .icons .info {
+    background-color: #353434;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px 5px;
+    margin: 15px 30px;
+    border-radius: 15% 3%;
   }
   #beneficios .icons .info img {
     background-color: #ffffff;
-    width: 60px;
+    width: 65px;
     border-radius: 80%;
     margin: 20px 0;
   }
-  #beneficios .icons .info h3, #beneficios .icons .info h4, #beneficios .icons .info h5, #beneficios .icons .info h6 {
+  #beneficios .icons .info h3 {
     color: #db0505;
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     padding: 2px 10px;
     margin-bottom: 5px;
   }
@@ -148,71 +150,89 @@
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    height: 60%;
-    font-size: 1.7rem;
+    height: 70%;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-justify: auto;
-    padding: 0 30px;
+    margin: 0 30px;
   }
   #planos {
     background-color: #1f1f1f;
     height: 95vh;
+    display: flex;
+    flex-direction: column;
   }
   #planos h2 {
     color: #db0505;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #planos .info {
     display: flex;
     flex-direction: row;
-  }
-  #planos .info ul {
-    width: 100%;
-    display: flex;
-    margin-top: 20px;
-  }
-  #planos .info ul li {
-    color: #ffffff;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    width: 100%;
-    margin: 0 20px;
-    display: flex;
     justify-content: center;
   }
   #planos .container {
+    height: 80%;
+    width: 100%;
     display: flex;
+    margin-top: 30px;
   }
   #planos .container .detalhes {
+    background-color: #353434;
     width: 100%;
+    height: 100%;
+    margin: 0 30px;
+    border-radius: 20% 7%;
   }
   #planos .container .detalhes ul {
-    background-color: #6a0777;
-    align-content: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #planos .container .detalhes ul h3 {
+    background-color: rgba(219, 216, 216, 0.7803921569);
+    color: #db0505;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
   #planos .container .detalhes ul li {
-    background-color: #41a1be;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #planos .container .detalhes ul li img {
     background-color: #ffffff;
     width: 30px;
     border-radius: 80%;
+    position: absolute;
+    margin-right: 200px;
   }
   #planos .container .detalhes ul li p {
     color: #ffffff;
-    position: relative;
+  }
+  #planos .container .detalhes ul #especial {
+    margin: 0px 10px;
+  }
+  #planos .container .detalhes ul #especial P {
+    color: #db0505;
+    font-size: 1.2rem;
+  }
+  #planos .container .detalhes ul #especial img {
+    background-color: #db0505;
+  }
+  #planos .container .detalhes ul button {
+    background-color: #ffffff;
   }
   #clientes {
-    background-color: #6a0777;
+    background-color: #1f1f1f;
     height: 95vh;
   }
   #clientes h2 {
@@ -225,13 +245,26 @@
     justify-content: center;
     text-align: center;
   }
-  #clientes .clientes {
+  #clientes .container {
+    background-color: #1a0c5f;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  #clientes .container .clientes {
     display: flex;
   }
-  #clientes .clientes img {
+  #clientes .container .clientes img {
     background-color: #ffffff;
-    width: 200px;
+    width: 110px;
+    height: 150px;
     margin: 20px 0;
+  }
+  #clientes .container .clientes P {
+    background-color: #000000;
+    width: 70%;
+    margin: 10px 0;
+    color: #ffffff;
   }
   #empresa {
     background-color: #41a1be;
@@ -246,6 +279,57 @@
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+  #empresa .logo {
+    display: flex;
+  }
+  #empresa .logo img {
+    display: flex;
+    justify-content: flex-start;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+  }
+  #empresa .logo h3 {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    margin-left: 150px;
+  }
+  #empresa .logo ul {
+    display: flex;
+  }
+  #empresa .logo ul li a {
+    display: flex;
+  }
+  #empresa .logo ul li a img {
+    display: flex;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    margin: 15px 10px;
+    border-radius: 55%;
+  }
+  #empresa .sobre {
+    display: flex;
+  }
+  #empresa .sobre p {
+    width: 80%;
+  }
+  #empresa .sobre ul {
+    display: flex;
+  }
+  #empresa .sobre ul li img {
+    background-color: #ffffff;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    margin: 15px 10px;
+    border-radius: 55%;
+  }
+  #empresa .sobre ul li a {
+    display: flex;
   }
 }
 /* Estilos para dispositivos móveis */
