@@ -23,10 +23,6 @@ $corContainer: #353434;
 $corBotao: #272727;
 $botaoHouver: #dfdfdfc7; 
 
-// Cores para Desenvolvimento
-$caixaTeste: #41a1be;
-$itemTeste: #6a0777;
-
 *{
     padding: 0;
     margin: 0;
@@ -334,7 +330,7 @@ $itemTeste: #6a0777;
 
         .container{
             background-color: $corContainer;
-            height: 85%;
+            height: 75%;
             border-radius: 3%;
             margin: 30px 30px;
             display: flex;
@@ -492,19 +488,19 @@ $itemTeste: #6a0777;
         }
 
         .autor{
+            display: flex;
+            justify-content: center;
+        
             a{
                 color: $tituloCor;
                 font-family: $font-primary;
                 font-weight: $font-weight-light;
                 font-size: 1.5rem;
                 margin-top: 15px;
-                display: flex;
-                justify-content: center;
                 text-align: center;
                 text-decoration: none;
             }
         }
-
     }
 }
 
