@@ -20,7 +20,8 @@ $tituloCor: #db0505;
 $fraseCor: #ffffff;
 $textoCor: #ffffff;
 $corContainer: #353434;
-$corBotao: #dbd8d8c7;
+$corBotao: #272727;
+$botaoHouver: #dfdfdfc7; 
 
 // Cores para Desenvolvimento
 $caixaTeste: #41a1be;
@@ -66,6 +67,8 @@ $itemTeste: #6a0777;
                     background-color: $corBotao;
                     padding: 3px 10px;
                     border-radius: 20% 0;
+                    transition: all 0.5s;
+
                     a{
                         color: $tituloCor;
                         font-family: $font-titulo;
@@ -74,6 +77,10 @@ $itemTeste: #6a0777;
                         text-decoration: none;
                         text-transform: uppercase;
                     }
+                }
+
+                li:hover{
+                    background-color: $botaoHouver;
                 }
             }
         }
@@ -282,14 +289,27 @@ $itemTeste: #6a0777;
                             color: $tituloCor;
                             font-size: 1.2rem;
                         }
-
-                        img{
-                            background-color: $tituloCor;
-                        }
                     }
 
                     button{
-                        background-color: #ffffff;
+                        background-color: $corBotao;
+                        border: 1px solid $textoCor;
+                        padding: 5px 15px;
+                        transition: all 0.5s;
+                        border-radius: 22% 7%;
+
+                        a{
+                            font-family: $font-primary;
+                            font-weight: $font-weight-bold;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: $tituloCor;
+                        }
+                    }
+
+                    button:hover{
+                        background-color: $botaoHouver;
+                        cursor: pointer;
                     }
                 }
             }
@@ -306,33 +326,39 @@ $itemTeste: #6a0777;
             font-family: $font-titulo;
             font-weight: $font-weight-bolder;
             font-size: 2.5rem;
-            margin-top: 5px;
             display: flex;
             justify-content: center;
             text-align: center;
         }
 
-        .container{ 
-            background-color: #1a0c5f;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
+        .container{
+            background-color: $corContainer;
+            border-radius: 3%;
+            margin: 30px 30px;
 
             .clientes{
                 display: flex;
+                justify-content: space-around;
 
                 img{
-                    background-color: $textoCor;
                     width: 110px;
                     height: 150px;
-                    margin: 20px 0;
+                    margin: 10px 0;
+                    border-radius: 10% 3%;
                 }
                 
                 P{
-                    background-color: #000000;
-                    width: 70%;
-                    margin: 10px 0;
                     color: $textoCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-light;
+                    font-size: 1.3rem;
+                    text-align: justify;
+                    width: 85%;
+                    margin: 10px 0px;
+                    margin-right: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                 }
             }
         }
@@ -340,15 +366,14 @@ $itemTeste: #6a0777;
 
     // Rodapé 
     #empresa{
-        background-color: $caixaTeste;
-        height: 50vh;
+        background-color: $planoFundo;
+        height: 40vh;
 
         h2{
             color: $tituloCor;
             font-family: $font-titulo;
             font-weight: $font-weight-bolder;
             font-size: 2.5rem;
-            margin-top: 5px;
             display: flex;
             justify-content: center;
             text-align: center;
@@ -361,6 +386,7 @@ $itemTeste: #6a0777;
                 justify-content: flex-start;
                 width: 70px;
                 height: 70px;
+                margin: 10px 30px;
                 border-radius: 20px;
             }
 
@@ -369,19 +395,23 @@ $itemTeste: #6a0777;
                 font-family: $font-primary;
                 font-weight: $font-weight-bold;
                 font-size: 5rem;
-                margin-left: 150px;
+                display: flex;
+                justify-content: flex-start;
             }
 
             ul{
+                width: 65%;
                 display: flex;
+                justify-content: flex-end;
+
                 li{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     a{
-                        display: flex;
                         img{
-                            display: flex;
-                            justify-content: flex-start;
-                            width: 50px;
-                            height: 50px;
+                            width: 35px;
+                            height: 35px;
                             margin: 15px 10px;
                             border-radius: 55%;
                         }
@@ -394,27 +424,54 @@ $itemTeste: #6a0777;
             display: flex;
 
             p{
-                width: 80%;
+                color: $textoCor;
+                font-family: $font-primary;
+                font-weight: $font-weight-light;
+                font-size: 1.2rem;
+                margin: 5px 0;
+                margin-left: 45px;
+                width: 60%;
+                display: flex;
+                justify-content: flex-start;
+                text-align: justify;
             }
             ul{
+                width: 40%;
+                margin-right: 55px;
                 display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
                 li{
-                    
+                    display: flex;
+
                     img{
                         background-color: $textoCor;
-                        
-                        justify-content: flex-start;
-                        width: 50px;
-                        height: 50px;
-                        margin: 15px 10px;
+                        width: 35px;
+                        height: 35px;
+                        margin: 0 10px;
                         border-radius: 55%;
                     }
                     a{
-                        display: flex; 
+                        color: $textoCor;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
                     }
                 }
             }
 
+        }
+
+        .autor{
+            color: $tituloCor;
+            font-family: $font-primary;
+            font-weight: $font-weight-light;
+            font-size: 1.5rem;
+            margin: 3px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
         }
 
     }
