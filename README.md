@@ -18,7 +18,7 @@ HomePage para uma Provedora de Internet
 
 ## Link do Site
 
-<a href="https://erysilva98.github.io/Speed.Net/" target="_blank" rel="Link do Projeto">Speed.Net</a>
+<a href="https://erysilva98.github.io/Speed.Net/" rel="Link do Projeto no Git Pages">Speed.Net</a>
         
 #
 
