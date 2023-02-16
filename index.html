@@ -21,7 +21,7 @@
     <title>Speed.Net</title>
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <!-- Logo -->
         <img src="./Img/logo.png" alt="Logotipo do site">
         <!-- Menu -->
@@ -35,43 +35,246 @@
             </ul>
         </nav>
     </header>
+    <!-- id #inicio saiu do main -->
+    <main> 
+        <div class="container">
+            <div class="info">
+                <!-- Titulo -->
+                <h1>
+                    Speed.Net
+                </h1>
 
-    <main id="inicio">
-
-        <!-- Titulo -->
-        <h1>
-            Speed.Net
-        </h1>
-        <!-- Imagem da Home -->
-        <img src="./Img/home.png" alt="Mulher Feliz com um notebook">
-
-
+                <h2>
+                    Provedora
+                </h2>
+                <p>
+                    A Velocidade da Rede 5G 
+                    ao seu Lado!
+                </p> 
+            </div>
+            <div class="imgHome">
+                <!-- Imagem da Home -->
+                <img src="./Img/home.png" alt="Mulher Feliz com um notebook">
+            </div>
+        </div>
     </main>
 
     <section id="beneficios"> 
         <h2>Beneficios</h2>
 
-      <!-- Teste de Icons 
         <div class="icons">
-            <img src="./Img/estrela.png" alt="Icones">
-            <img src="./Img/email.svg" alt="">
-        </div>
-        -->
+            <div class="info">
+                <img src="./Img/relogio-icon.png" alt="Icone de um rélogio">
+                <h3>Instalação</h3>
+                <p>
+                    Não perca mais tempo esperando pela instalação
+                    da sua internet. Com a nossa provedora, você tem instalação
+                    rápida, fácil e o kit com roteador totalmente gratuito. 
+                </p>
+            </div>
 
+            <div class="info">
+                <img src="./Img/cofre-icon.png" alt="Icone de um Cofre">
+                <h3>Melhor Preço</h3>
+                <p>
+                    Precisa de internet mas quer economizar?
+                    Oferecemos o melhor preço do mercado. Escolha um 
+                    de nossos planos e tenha uma conexão de qualidade
+                    em sua casa.
+                </p>
+            </div>
+
+            <div class="info">
+                <img src="./Img/atendente-icon2.png" alt="Icone de uma Atendente">
+                <h3>Atendimento</h3>
+                <p>
+                    Não fique sozinho com problemas de conexão. A Speed.Net
+                    tem atendimento e suporte especializados, que estão 
+                    sempre prontos para ajudar e garantir sua satisfação.
+                </p>
+            </div>
+
+            <div class="info">
+                <img src="./Img/wifi-icon.png" alt="Icone do Wifi">
+                <h3>Rede 5G</h3>
+                <p>
+                    Entre na nova era da conectividade. Tenha acesso 
+                    à rede 5G mais rápida e confiável. Navegue, jogue
+                    e assista tudo sem interrupções. Tenha a velocidade 
+                    da próxima geração agora mesmo.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="planos">
         <h2>Planos</h2>
+        <div class="container">
+
+            <!-- Plano de 50 Mega -->
+            <div class="detalhes">
+                <ul>
+                    <h3>50 Mega</h3>
+                    <li>                        
+                        <div><img src="./Img/real-icon.png" alt="Icone do Real"></div>
+                        <div><p> 49,99/mês </p></div>
+                    </li>
+                    <li>
+                        <img src="./Img/wifi-icon.png" alt="Icone do Wifi">
+                        <p>Wifi 5G</p>
+                    </li>
+                    <li id="especial">
+                        <img src="./Img/estrela-icon.png" alt="Icone de Estrela">
+                        <p>Equipamento Gratís</p>
+                    </li>
+                    <li>
+                        <img src="./Img/download-icon.png" alt="Icone de Download">
+                        <p>50 MB de Download</p>
+                    </li>
+                    <li>
+                        <img src="./Img/upload-icon.png" alt="Icone de Upload">
+                        <p>25 MB de Upload</p>
+                    </li>
+                    <li>   
+                        <button><a href="#planos">Contratar</a></button>
+                    </li>
+                </ul>
+            </div>
+                            
+            <!-- Plano de 100 Mega -->
+            <div class="detalhes">
+                <ul>
+                    <h3>100 Mega</h3>
+                    <li>
+                        <img src="./Img/real-icon.png" alt="Icone do Real">
+                        <p> 119,99/mês </p>
+                    </li>
+                    <li>
+                        <img src="./Img/wifi-icon.png" alt="Icone do Wifi">
+                        <p>Wifi 5G</p>
+                    </li>
+                    <li id="especial">
+                        <img src="./Img/estrela-icon.png" alt="Icone de Estrela">
+                        <p>+Suporte Premium</p>
+                    </li>
+                    <li>
+                        <img src="./Img/download-icon.png" alt="Icone de Download">
+                        <p>100 MB de Download</p>
+                    </li>
+                    <li>
+                        <img src="./Img/upload-icon.png" alt="Icone de Upload">
+                        <p>50 MB de Upload</p>
+                    </li>
+                    <li>   
+                        <button><a href="#planos">Contratar</a></button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Plano de 200 Mega -->
+            <div class="detalhes">
+                <ul>
+                    <h3>200 Mega</h3>
+                    <li>
+                        <img src="./Img/real-icon.png" alt="Icone do Real">
+                        <p> 229,99/mês </p>
+                    </li>
+                    <li>
+                        <img src="./Img/wifi-icon.png" alt="Icone do Wifi">
+                        <p>Wifi 5G</p>
+                    </li>
+                    <li id="especial">
+                        <img src="./Img/estrela-icon.png" alt="Icone de Estrela">
+                        <p>+Microsoft Azure</p>
+                    </li>
+                    <li>
+                        <img src="./Img/download-icon.png" alt="Icone de Download">
+                        <p>200 MB de Download</p>
+                    </li>
+                    <li>
+                        <img src="./Img/upload-icon.png" alt="Icone de Upload">
+                        <p>100 MB de Upload</p>
+                    </li>
+                    <li>   
+                        <button><a href="#planos">Contratar</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="clientes">
         <h2>Clientes</h2>
+        <div class="container">
+            <div class="cliente1">
+                <img src="./Img/cliente-1.png" alt="Imagem de um Analista Financeiro">
+                <p>
+                    "Eu sou um Henrique Marques trabalho com finanças e preciso de uma conexão confiável e rápida para realizar minhas análises e relatórios. A Speed.net tem sido uma excelente escolha para mim. Com velocidades de download e upload superiores, realizo minhas tarefas rápido. O atendimento e suporte da empresa é excelente, sempre solucionando qualquerproblema rapidamente. Eu recomendo a Speed.net para qualquer pessoa que precise de uma conexão de alta qualidade."
+                </p>
+            </div>
+            <div class="cliente2">
+                <img src="./Img/cliente-2.png" alt="Imagem de uma Streaming e Gamer">
+                <p>
+                    "Sou a Kelly, Streaming e jogadora profissional , a minha conexão de internet é crucialpara meu desempenho. A Speed.net me surpreendeu positivamente com sua velocidade.Isso me permite jogar sem qualquer atraso ou interrupção, uma vantagem para competir.Recomendo a Speed.net para qualquer jogador que precisa de uma conexão e rápidapara melhorar seu desempenho".
+                </p>
+            </div>
+            <div class="cliente3">
+                <img src="./Img/cliente-3.png" alt="Imagem de uma Desenvolvedora Full-Stack">
+                <p>
+                    "Sou a Mary, desenvolvedora e trabalho remoto, com isso minha conexão de internet é essencial para o meu trabalho. A Speed.net tem uma conexão confiável e rápida, permitindo que eu acesse, transfira e guarde arquivos rapidamente, com o serviço de armazenamento da AWS, recomendo muito a Speed.Net".
+                </p>
+            </div>
+        </div>
     </section>
 
     <footer id="empresa">
         <h2>Empresa</h2>
-    </footer>
+        <div class="logo">
+            <img src="./Img/logo.png" alt="Icone do Logotipo da Empresa">
+            <h3>Speed.Net</h3>
 
-    <script src="Js/script.js"></script>
+            <ul>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="./Img/whatsapp-icon.png" alt="Icone do Whatsapp"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Erimilson" target="_blank"><img src="./Img/facebook-icon.png" alt="Icone do Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/erimilson.silva_98/" target="_blank"><img src="./Img/Instagram-icon.png" alt="Icone do Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/erimilson-silva-31493720a/" target="_blank"><img src="./Img/linkedin-icon.png" alt="Icone do LinkeIn"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sobre">
+            <p>
+                Quem somos?
+                A Speed.net é uma provedora de internet com 1 ano no
+                mercado, orgulhando-se de oferecer aos nossos clientes uma
+                conexão rápida e confiável com a rede 5G disponível. Nós nos
+                esforçamos para garantir a satisfação do cliente em primeiro
+                lugar, fornecendo suporte técnico de excelência e pacotes de
+                serviços com custo baixo. Procurando uma provedora de internet
+                confiável e inovadora, vem ser cliente da Speed.net. 
+            </p>
+
+            <ul>
+                <li>
+                    <img src="./Img/localizacao-icon.png" alt="Icone de Localização ">
+                    <a href="https://github.com/Erysilva98/Speed.Net" target="_blank">Github - Speed.Net</a>
+                </li>
+                <li>
+                    <img src="./Img/phone-icon.png" alt="Icone de Telephone">
+                    <a href="#empresa">87 9 9999-9999</a>
+                </li>
+            </ul>
+        </div>
+        <div class="autor">
+           <a href="https://github.com/Erysilva98" target="_blank" rel="Perfil do Github"> &copy: Erimilson Silva</a>
+        </div>
+    </footer>
+    <script src="./Js/script.js"></script>
 </body>
 </html>

@@ -2,64 +2,527 @@
 @import
 url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family= Josefin +Sans:wght@300,400;500;600;700 & display=swap');
+
 // Definir as Fontes
+$font-primary: 'Open Sans', sans-serif;
+$font-titulo: 'Josefin Sans', sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
 
 // Cores
 $menuCorFundo: #000000;
-$planoFundo: #252525;
-$tituloCor: #970303;
+$planoFundo: #1f1f1f;
+$tituloCor: #db0505;
+$fraseCor: #ffffff;
 $textoCor: #ffffff;
-
-// Cores para Desenvolvimento
-$caixaTeste: #41a1be;
-$itemTeste: #6a0777;
+$corContainer: #353434;
+$corBotao: #272727;
+$botaoHouver: #dfdfdfc7; 
 
 *{
     padding: 0;
     margin: 0;
-    font-size: 14px;
-    scrollbar-width: none;
+    font-family: $font-primary;
+    font-size: 12px;
+    overflow-x: hidden;
 }
 
-@media only screen
-{
+@media screen {
     header{
         background-color: $menuCorFundo;
-        height: 60px;
         width: 100vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-right: 15px;
+        height: 10vh;
 
         img{
-            height: 60px;
-            width: 60px;
-            margin-top: 20px;
-            margin-left: 35px;
-        }
-        nav{
-            background-color: $menuCorFundo;
-            height: 60px;
+            position: absolute;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 5%;
+            justify-content: flex-start;
+            width: 70px;
+            height: 70px;
+            margin: 15px 50px;
+            border-radius: 20px;
+        }
 
+        nav{
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            justify-content: flex-end;
+            
             ul{
+                width: 80%;
                 display: flex;
-
+                align-items: center;
+                justify-content: space-around;
+                
                 li{
-                    background-color: $menuCorFundo;
-                    list-style: none;
+                    background-color: $corBotao;
+                    padding: 3px 10px;
+                    border-radius: 20% 0;
+                    transition: all 0.5s;
 
                     a{
-                        background-color: $menuCorFundo;
                         color: $tituloCor;
+                        font-family: $font-titulo;
+                        font-weight: $font-weight-bolder;
+                        font-size: 1.2rem;
                         text-decoration: none;
                         text-transform: uppercase;
-                        margin: 20px;
+                    }
+                }
+
+                li:hover{
+                    background-color: $botaoHouver;
+                }
+            }
+        }
+    }
+
+    main{
+        background-color: $planoFundo;
+        height: 85vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        .container{
+            width: 100vw;
+            display: flex;
+
+            .info{
+                width: 100%;
+                height: 85%;
+                text-justify: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-self: auto;
+                position: absolute;
+                z-index: 1;
+
+                h1{
+                    color: $tituloCor;
+                    font-family: $font-titulo;
+                    font-weight: $font-weight-bolder;
+                    font-size: 14rem;
+                    margin-left: 50px;           
+                }
+    
+                h2{
+                    color: $fraseCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-bold;
+                    font-size: 5rem;
+                    margin-left: 80px;
+                }
+                p{
+                    color: $textoCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-light;
+                    font-size: 1.7rem;
+                    margin-left: 110px;
+                    text-justify: auto;
+                }
+            }
+
+            .imgHome{
+                display: flex;
+                width: 100%;
+                justify-content: right;
+                align-items: center;
+                img{
+                    height: 90%;
+                    width: 55%;
+                    margin: 0 35px;
+                    // Ajuste na Imagem
+                    filter: brightness(85%);
+                }
+            }
+        }
+    }
+
+    // Seção Benefícios
+    #beneficios{
+        background-color: $planoFundo;
+        height: 95vh;
+
+        h2{
+            color: $tituloCor;
+            font-family: $font-titulo;
+            font-weight: $font-weight-bolder;
+            font-size: 2.5rem;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .icons{
+            height: 90%;
+            display: flex;
+
+            .info{
+                background-color: $corContainer;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 15px 30px;
+                border-radius: 15% 3%;
+
+                img{
+                    background-color: $textoCor;
+                    width: 65px;
+                    border-radius: 80%;
+                    margin: 20px 0;
+                }
+
+                h3{
+                    color: $tituloCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-medium;
+                    font-size: 2.2rem;
+                    padding: 2px 10px;
+                    margin-bottom: 5px;   
+                }
+
+                p{
+                    color: $textoCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-light;
+                    height: 70%;
+                    font-size: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-justify: auto;
+                    margin: 0 30px;
+                }
+
+            }
+        }
+    }
+
+    // Seção Planos
+    #planos{
+        background-color: $planoFundo;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            color: $tituloCor;
+            font-family: $font-titulo;
+            font-weight: $font-weight-bolder;
+            font-size: 2.5rem; 
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .container{
+            // Ocupar 80% da seção de 95vh
+            height:80%;
+            width: 100%;
+            display: flex;
+            margin-top: 30px;            
+            
+            .detalhes
+            {
+                background-color: $corContainer;
+                // Ocupa 100% da classe container
+                width: 100%;
+                height: 100%;
+                margin: 0 30px;
+                border-radius: 20% 7%;
+
+                ul{
+                    // Ocupa 100% referente a classe detalhes
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h3{
+                        background-color: $corBotao;
+                        color: $tituloCor;
+                        font-family: $font-primary;
+                        font-weight: $font-weight-bold;
+                        font-size: 3rem;
+                        margin-bottom: 20px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                                        
+                    li{
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img{
+                            background-color: $textoCor;
+                            width: 30px;
+                            border-radius: 80%;
+                            position: absolute;
+                            margin-right: 200px;
+                        }
+
+                        p{
+                            color: $textoCor;
+                            font-size: 1.2rem;
+                        }
+
+                    }
+
+                    #especial{
+                        margin:0px 15px;
+
+                        P{
+                            color: $tituloCor;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    button{
+                        background-color: $corBotao;
+                        border: 1px solid $textoCor;
+                        padding: 5px 15px;
+                        transition: all 0.5s;
+                        border-radius: 22% 7%;
+
+                        a{
+                            font-family: $font-primary;
+                            font-weight: $font-weight-bold;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: $tituloCor;
+                        }
+                    }
+
+                    button:hover{
+                        background-color: $botaoHouver;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    // Seção Clientes
+    #clientes{
+        background-color: $planoFundo;
+        height: 95vh;
+
+        h2{
+            color: $tituloCor;
+            font-family: $font-titulo;
+            font-weight: $font-weight-bolder;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container{
+            background-color: $corContainer;
+            height: 75%;
+            border-radius: 3%;
+            margin: 30px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .cliente1, .cliente3{
+                display: flex;
+                justify-content: space-around;
+
+                img{
+                    width: 180px;
+                    margin-right: 15px;
+                    border-radius: 10% 3%;
+                }
+                
+                P{
+                    color: $textoCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-light;
+                    font-size: 1.3rem;
+                    text-align: justify;
+                    width: 85%;
+                    margin-right: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+
+            .cliente2{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row-reverse;
+
+                img{
+                    width: 180px;
+                    border-radius: 10% 3%;
+                    margin-right: 15px;
+                }
+
+                P{
+                    color: $textoCor;
+                    font-family: $font-primary;
+                    font-weight: $font-weight-light;
+                    font-size: 1.3rem;
+                    text-align: justify;
+                    width: 85%;
+                    margin-right: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    // Rodapé 
+    #empresa{
+        background-color: $planoFundo;
+        height: 40vh;
+
+        h2{
+            color: $tituloCor;
+            font-family: $font-titulo;
+            font-weight: $font-weight-bolder;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .logo{
+            display: flex;
+            img{
+                display: flex;
+                justify-content: flex-start;
+                width: 70px;
+                height: 70px;
+                margin: 10px 30px;
+                border-radius: 20px;
+            }
+
+            h3{
+                color: $fraseCor;
+                font-family: $font-primary;
+                font-weight: $font-weight-bold;
+                font-size: 5rem;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            ul{
+                width: 65%;
+                display: flex;
+                justify-content: flex-end;
+
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    a{
+                        img{
+                            width: 35px;
+                            height: 35px;
+                            margin: 15px 10px;
+                            border-radius: 55%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sobre{
+            display: flex;
+
+            p{
+                color: $textoCor;
+                font-family: $font-primary;
+                font-weight: $font-weight-light;
+                font-size: 1.2rem;
+                margin: 5px 0;
+                margin-left: 45px;
+                width: 60%;
+                display: flex;
+                justify-content: flex-start;
+                text-align: justify;
+            }
+            ul{
+                width: 40%;
+                margin-right: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                li{
+                    display: flex;
+
+                    img{
+                        background-color: $textoCor;
+                        width: 35px;
+                        height: 35px;
+                        margin: 0 10px;
+                        border-radius: 55%;
+                    }
+                    a{
+                        color: $textoCor;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+
+        }
+
+        .autor{
+            display: flex;
+            justify-content: center;
+        
+            a{
+                color: $tituloCor;
+                font-family: $font-primary;
+                font-weight: $font-weight-light;
+                font-size: 1.5rem;
+                margin-top: 15px;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+    html{
+        width: 100%;
+    }
+
+    header{
+        img{
+            width: 0;
+            height: 0;
+            padding: 0;
+        }
+
+        nav{            
+            ul{
+                width: 100vw;
+                li{
+                    a{
+                        font-size: 1.1rem;
                     }
                 }
             }
@@ -68,95 +531,39 @@ $itemTeste: #6a0777;
 
     main{
         background-color: $planoFundo;
-        height: 90vh;
+        height: 85vh;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        img{
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            width: 100vw;
+            margin: 10px 0px;
+        }
 
         h1{
-            color: $tituloCor;
-            font-size: 16rem;
-            text-align: left;
-            margin-top: -200px;
-            z-index: 1;
-            
-        }
-        
-        img{
-            height: 80vh;
-            width: 50vw;
-
-            position: absolute;
-            margin-left: 30%;
-            z-index: 0;
+            font-size: 5rem;
+            margin-top: 25vh; 
         }
     }
+}
 
-    // Seção Benefícios
-
-    #beneficios{
-        background-color: $planoFundo;
-        height: 90vh;
-
-        h2{
-            padding-top: 10px;
-            text-align: center;
-            color: $textoCor;
-        }
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    html{
+        width: 100%;
     }
 
-    // Seção Planos
+}
 
-    #planos{
-        background-color: $caixaTeste;
-        height: 90vh;
-
-        h2{
-            padding-top: 10px;
-            text-align: center;
-            color: $textoCor;
-        }
+/* Estilos para desktops */
+@media (min-width: 992px) {
+    html{
+        width: 100%;
     }
-
-    // Seção Clientes
-
-    #planos{
-        background-color: $itemTeste;
-        height: 90vh;
-
-        h2{
-            padding-top: 10px;
-            text-align: center;
-            color: $textoCor;
-        }
-    }
-
-    // Seção Planos
-
-    #clientes{
-        background-color: $caixaTeste;
-        height: 90vh;
-
-        h2{
-            padding-top: 10px;
-            text-align: center;
-            color: $textoCor;
-        }
-    }
-
-    // Rodapé 
-
-    #empresa{
-        background-color: $itemTeste;
-        height: 40vh;
-
-        h2{
-            padding-top: 10px;
-            text-align: center;
-            color: $textoCor;
-        }
-    }
-
 }
 
 
